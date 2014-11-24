@@ -22,20 +22,27 @@ body {
     background: #fff;
 }
 
+/*animated*/
+
+div#animated {
+    animation-play-state:running;
+}
+
 /* Links */
 
 a {
-    color: #09c;
+    color: #cc1cbf;
     text-decoration: none;
 }
 
 a:hover {
-    color: #069;
+    color: #4731cc;
     text-decoration: underline;
 }
 
 a:visited {
-    color: #069;
+    color: olivedrab;
+
 }
 
 /* Navigation */
@@ -77,39 +84,48 @@ ul.navigation {
 /* new menubar css */
 
 .menu-bar {
-    width: 98%;
+    /* width: 98%; */
     margin: 0px 0px 0px 0px;
-    padding: 6px 6px 4px 6px;
+    /* padding: 6px 6px 4px 6px; */
     height: 30px;
-    line-height: 100%;
+    /* line-height: 120%; */
     border-radius: 24px;
     -webkit-border-radius: 24px;
     -moz-border-radius: 24px;
-    box-shadow: 2px 2px 3px #666666;
-    -webkit-box-shadow: 2px 2px 3px #666666;
-    -moz-box-shadow: 2px 2px 3px #666666;
-    background: #8B8B8B;
-    background: linear-gradient(top,  #A9A9A9,  #7A7A7A);
-    background: -ms-linear-gradient(top,  #A9A9A9,  #7A7A7A);
-    background: -webkit-gradient(linear, left top, left bottom, from(#A9A9A9), to(#7A7A7A));
-    background: -moz-linear-gradient(top,  #A9A9A9,  #7A7A7A);
-    border: solid 1px #6D6D6D;
-    position:relative;
-    z-index:999;
+    box-shadow: 2px 2px 3px #67ff21;
+    -webkit-box-shadow: 2px 2px 3px #419f20;
+    -moz-box-shadow: 2px 2px 3px #419f20;
+    background: #3fdd20;
+    background: linear-gradient(top, #5de719, #419f20);
+    background: -ms-linear-gradient(top, #5de719, #419f20);
+    background: -webkit-gradient(linear, left top, left bottom, from(#5de719), to(#419f20));
+    background: -moz-linear-gradient(top, #5de719, #419f20);
+    border: solid 1px #419f20;
+    position: relative;
+    z-index: 999;
+    border-left: 80px;
+    font-size: 140%;
+    font-style: italic;
+    font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+
 }
 .menu-bar li {
     margin: 0px 0px 6px 0px;
+    margin-left: 110px;
     padding: 0px 6px 0px 6px;
     float: left;
     position: relative;
+    border-left: 90px;
     list-style: none;
+    font-weight: bold;
+    margin-top: 6px;
 }
 #menu-bar a {
     font-weight: bold;
     font-family: arial;
     font-style: normal;
     font-size: 12px;
-    color: #E7E5E5;
+    color: #e72b30;
     text-decoration: none;
     display: block;
     padding: 6px 20px 6px 20px;
@@ -122,9 +138,10 @@ ul.navigation {
 }
 #menu-bar li ul li a {
     margin: 0;
+
 }
 #menu-bar .active a, #menu-bar li:hover > a {
-    background: #0399D4;
+    background: #8bd416;
     background: linear-gradient(top,  #EBEBEB,  #A1A1A1);
     background: -ms-linear-gradient(top,  #EBEBEB,  #A1A1A1);
     background: -webkit-gradient(linear, left top, left bottom, from(#EBEBEB), to(#A1A1A1));
