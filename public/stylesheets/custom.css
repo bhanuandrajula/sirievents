@@ -80,6 +80,21 @@ ul.navigation {
     text-decoration: underline;
 }
 
+.content {
+    color: #419f20;
+    background-color: white;
+    font-size: 18px;
+    font-style: italic;
+    font-family: "Warnock Pro", "Goudy Old Style", "Palatino", "Book Antiqua", Georgia, serif;
+    word-spacing: 0.6pt;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    word-spacing: 0.6pt;
+    top:10px;
+
+
+}
 
 /* new menubar css */
 

@@ -1,19 +1,19 @@
 <div id="header">
 
-   <%= image_tag("SiriEvents1.png", :alt => "Siri Events Logo", :width=>"180" ,:height=>"100", :class => "round") %>
+   <%= link_to logo,root_url %>
 
   <ul class="navigation round">
-    <li><%= link_to "Twitter", '#' %></li>
-    <li><%= link_to "Facebook", '#' %></li>
-    <li><%= link_to "Instagram", '#' %></li>
-    <li><%= link_to "YouTube", '#' %></li>
+    <li><%= link_to "Facebook", 'https://www.facebook.com/siris' %></li>
+    <li><%= link_to "Twitter", 'https://twitter.com/sirievents' %></li>
+    <li><%= link_to "Google+", 'https://plus.google.com/106213346933467639263/about' %></li>
+    <li><%= link_to "Videos", 'https://www.youtube.com/results?search_query=sirisha+bavireddy' %></li>
   </ul>
 
   <ul class="menu-bar">
-  <li><%= link_to "Home", '#' %></li>
-  <li><%= link_to "Services", '#' %></li>
-  <li><%= link_to "Gallery", '#' %></li>
-  <li><%= link_to "Contact", '#' %></li>
+  <li><%= link_to "Home", root_url %></li>
+  <li><%= link_to "Services", services_url %></li>
+  <li><%= link_to "Gallery", gallery_url %></li>
+  <li><%= link_to "Contact", contact_url %></li>
   </ul>
 
 

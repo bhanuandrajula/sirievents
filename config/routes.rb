@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  get 'pages/home'
 
-  get 'pages/services'
+  root 'pages#home'
+  get '/services' => 'pages#services'
+  get '/gallery' => 'pages#gallery'
+  get '/contact' => 'pages#contact'
 
-  get 'pages/gallery'
 
-  get 'pages/contact'
-
-  # The priority is based upon order of creation: first created -> highest priority.
+    # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

@@ -8,4 +8,13 @@ module ApplicationHelper
       "#{base_title} | #{@title}"
     end
   end
+
+  def logo
+    image_tag("SiriEvents.png", :alt => "Siri Events", :width=>"180" ,:height=>"100", :class => "round")
+  end
+
+  def fb
+    image_tag("fb.png", :alt => "FB", :width=>"30" ,:height=>"40", :class => "round")
+  end
+
 end
