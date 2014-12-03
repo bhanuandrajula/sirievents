@@ -3,10 +3,18 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/services' => 'pages#services'
   get '/gallery' => 'pages#gallery'
-  get '/contact' => 'pages#contact'
+  #get '/contact' => 'pages#contact'
 
+  # get '/contact',     to: 'pages#new',via: 'get'
+  # resources "contact", only: [:contact, :new, :create,]
 
-    # The priority is based upon order of creation: first created -> highest priority.
+  get '/contact',     to: 'contacts#new',             via: 'get'
+  resources "contacts", only: [:new, :create]
+
+  #match '/contacts',     to: 'contacts#new',             via: 'get'
+  #resources "contacts", only: [:new, :create]
+
+  # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

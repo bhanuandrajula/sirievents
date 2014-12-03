@@ -11,6 +11,9 @@ gem 'sprockets', '2.11.3'
 gem 'gravatar_image_tag' ,'0.1.0'
 gem 'will_paginate' , '3.0.7'
 
+gem 'mail_form'
+gem 'simple_form'
+
 group :development do
   gem 'rspec-rails', '3.0.2'
   # gem 'spork-rails', '4.0.0'
@@ -29,11 +32,13 @@ group :development do
   #gem 'protected_attributes'
   #gem 'rails', '4.1.1'
   #gem 'faker', '1.4.3'
+  gem 'foreman'
 
 end
 
 group :test do
   gem 'rspec', '3.0.0'
+  gem 'foreman'
   #gem 'spork','0.9.2'
   #gem 'capybara','2.4.1'
   #gem 'autotest-rails'
